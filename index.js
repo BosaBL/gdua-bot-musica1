@@ -75,7 +75,7 @@ bot.on("message", async message => {
     
     
     if(message.content.toLowerCase() === `${prefix}reload`) {
-    if(message.member.id === dueñoID) return message.channel.send(
+    if(message.member.id === duenoID) return message.channel.send(
 			{embed:{
 				title: '**Comandos recargados**'
     }}).then(msg => msg.delete(3000) + loadcmds() + message.delete())};
