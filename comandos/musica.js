@@ -118,12 +118,13 @@ break;
 	  case "q":
 		if (!serverQueue) return message.channel.send('No hay nada reproduciendose.').then(message.delete());
 		let i = 0;
+		let x = 0;
 			
 		let queuemap = serverQueue.songs.slice(i++, 15)
 		return message.channel.send({
 			embed: {
 				title: `__**Cola:**__`,
-				description: `${queuemap.map(song => `**♪ ${++index}-.** *${song.title}* ▐ **Pedida por:** ${song.requester}`).join('\n')}`
+				description: `${queuemap.map(song => `**♪ ${++x}-.** *${song.title}* ▐ **Pedida por:** ${song.requester}`).join('\n')}`
 			}
 			
 		}).then(message.delete())
