@@ -67,7 +67,7 @@ module.exports.run = async (bot, message, args) => {
 		if (!serverQueue) return message.channel.send('No hay cola de canciones.').then(message.delete());
 		serverQueue.connection.dispatcher.end({
 			embed: {
-				tittle: 'Canción saltada.'
+				title: 'Canción saltada.'
 			}
 		});
 		return undefined;
