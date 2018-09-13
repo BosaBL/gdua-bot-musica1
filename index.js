@@ -70,7 +70,7 @@ bot.on("message", async message => {
     if (!message.member.roles.has('473829976924356618')) return message.author.send(`Para usar nuestro bot necesitas ser miembro de __***Guerreros de la Ultima Alianza***__, para más información visita https://www.clangdua.com`).then(message.delete());
 
 		let cmd = bot.commands.get(command.slice(prefix.length));
-    if(cmd) cmd.run(bot, message, args, dueñoID);
+    if(cmd) cmd.run(bot, message, args);
     
     
     if(message.content.toLowerCase() === `${prefix}reload`) {
