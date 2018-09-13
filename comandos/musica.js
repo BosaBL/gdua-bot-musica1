@@ -123,7 +123,7 @@ break;
 		return message.channel.send({
 			embed: {
 				title: `__**Cola:**__`,
-				description: `${queuemap.map(song => `**♪ ${i}-.** *${song.title}* ▐ **Pedida por:** ${song.requester}`).join('\n')}`
+				description: `${queuemap.map(song => `**♪ ${++index}-.** *${song.title}* ▐ **Pedida por:** ${song.requester}`).join('\n')}`
 			}
 			
 		}).then(message.delete())
