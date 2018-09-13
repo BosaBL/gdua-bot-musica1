@@ -36,7 +36,6 @@ loadcmds()
 
 bot.on("ready", async () => {
   console.log(bot.commands);
-  bot.users.get(dueñoID).send();
     let invitelink = await bot.generateInvite(["ADMINISTRATOR"]);
     
 		console.log(invitelink);
@@ -48,7 +47,7 @@ bot.on("ready", async () => {
 ║╚╩═║╔╝╚╝║║╚═╝║║╔═╗║     ─╚╗╔╝─║║╚═╗
 ╚═══╝╚═══╝╚═══╝╚╝─╚╝     ──╚╝──╚═══╝
   `);
-  bot.users.get(dueñoID).send(`
+  bot.users.get(duenoID).send(`
 ╔═══╗╔═══╗╔╗─╔╗╔═══╗     ╔╗──╔╗╔═══╗
 ║╔═╗║╚╗╔╗║║║─║║║╔═╗║     ║╚╗╔╝║║╔═╗║
 ║║─╚╝─║║║║║║─║║║║─║║     ╚╗║║╔╝╚╝╔╝║
